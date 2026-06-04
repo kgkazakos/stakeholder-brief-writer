@@ -1,6 +1,6 @@
 # stakeholder-brief-writer
 
-**CPR Orbital Tool #39 · S6: Pre-study & impact · Dec 4, 2026**
+**CPR Orbital Tool #39 · S6: Pre-study & impact 
 
 Auto-generates a one-page executive summary from a full research report. Built for UX researchers who need to communicate findings to decision-makers — without spending an afternoon reformatting bullet points.
 
