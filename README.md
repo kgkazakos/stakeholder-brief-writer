@@ -20,7 +20,7 @@ You've done the research. You have 15 pages of findings, quotes, and recommendat
 - **Confidence & impact tagging** — each finding is automatically tagged with confidence level (high/medium/low) and impact scope (strategic/tactical/operational)
 - **Key metric extraction** — pulls participant counts, satisfaction scores, and SUS scores from body text
 - **Study type inference** — identifies qualitative, quantitative, and mixed-methods studies from report language
-- **LLM enrichment (on by default)** — Claude Opus 4, Gemini 3.1 Pro Preview, or GPT-5.5 via LiteLLM polish the narrative and refine finding statements; LLM output is additive only and never modifies core extracted data
+- **LLM enrichment (on by default)** — Claude Opus 4, Gemini 4 Argon, or GPT-5.5 via LiteLLM polish the narrative and refine finding statements; LLM output is additive only and never modifies core extracted data
 - **Three export formats** — Markdown one-pager, JSON (structured), plain text (for slides/email)
 - **Batch processing** — generate briefs from a directory of reports in one command
 - **Rule-based fallback** — works fully offline with zero API calls; LLM backends degrade gracefully
@@ -53,7 +53,7 @@ stakeholder-brief-writer generate report.md
 stakeholder-brief-writer generate report.md --format all --output ./briefs
 
 # Use a specific LLM backend
-stakeholder-brief-writer generate report.md --model gemini/gemini-3.1-pro-preview
+stakeholder-brief-writer generate report.md --model gemini/gemini-4-argon
 
 # Rule-based only (no API key needed)
 stakeholder-brief-writer generate report.md --no-llm
@@ -100,7 +100,7 @@ export OPENAI_API_KEY=your_key
 
 Supported models (LiteLLM format):
 - `anthropic/claude-opus-4-7`
-- `gemini/gemini-3.1-pro-preview`
+- `gemini/gemini-4-argon`
 - `openai/gpt-5.5`
 
 ---
